@@ -1,0 +1,88 @@
+@import "variable.scss";
+
+html {
+  font-size: 16px;
+  //background: transparent;
+  &.theme-white {
+    body {
+      color: $theme-white-color;
+      background: $theme-white-background;
+    }
+  }
+  &.theme-black {
+    body {
+      color: $theme-black-color;
+      background: $theme-black-background;
+    }
+  }
+}
+
+body, html {
+  line-height: 1;
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback';
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  //background: $color-background;
+  /*height: 100%;*/
+  width: 100%;
+}
+
+*,::after,::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  //color: $theme-black-color;
+  //background: $theme-black-background;
+}
+
+input {
+  outline: none;
+}
+
+button:focus{
+  outline:none;
+}
+
+.sm-sz-9 {
+  display: inline-block;
+  font-size: 12px;
+  transform: scale(.7);
+}
+
+.sm-sz-10 {
+  display: inline-block;
+  font-size: 12px;
+  transform: scale(.8);
+}
+
+
+.sm-sz-11 {
+  display: inline-block;
+  font-size: 12px;
+  transform: scale(.9);
+}
+
+img[src=""],img:not([src]){
+  opacity:0;
+}
+
+.a-look-all {
+  &::after{
+    content: '\67e5\770b\5168\90e8';
+    display: inline;
+  }
+}
+
+.font-icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  color: inherit;
+}
+
+.v-cloak {
+  visibility: hidden;
+}

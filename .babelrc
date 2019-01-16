@@ -1,0 +1,22 @@
+{
+  "presets": [
+    ["env", {
+      "modules": false,
+      "targets": {}
+    }]
+  ],
+  "plugins": [
+    "transform-vue-jsx",
+    ["import", {
+      "libraryName": "iview",
+      "libraryDirectory": "src/components"
+    }],
+    [
+      "component",
+      {
+        "libraryName": "element-ui",
+        "styleLibraryName": "theme-chalk"
+      }
+    ]
+  ]
+}
